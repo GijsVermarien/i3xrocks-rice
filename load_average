@@ -1,0 +1,4 @@
+# /bin/bash
+loads=$(cat /proc/loadavg | awk '{printf $1"/"$2"/"$3}')
+echo $loads
+exit 0 
